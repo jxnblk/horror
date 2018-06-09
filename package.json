@@ -1,6 +1,6 @@
 {
   "name": "horror",
-  "version": "1.0.0-3",
+  "version": "1.0.0-4",
   "description": "React HTML elements with CSS-in-JS",
   "main": "index.js",
   "scripts": {
