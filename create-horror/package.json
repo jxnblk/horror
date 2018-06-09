@@ -1,0 +1,14 @@
+{
+  "name": "create-horror",
+  "version": "1.0.0-0",
+  "description": "npm init horror",
+  "bin": {
+    "create-horror": "./cli.js"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "initit": "^1.0.0-2"
+  }
+}
