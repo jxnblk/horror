@@ -3,3 +3,4 @@ examples
 test.js*
 coverage
 .nyc_output
+create-horror
