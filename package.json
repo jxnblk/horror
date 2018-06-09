@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prepare": "babel src -d dist",
-    "start": "x0 examples",
+    "start": "x0 docs/src",
+    "build": "x0 build docs/src -d docs",
     "test": "nyc ava",
     "cover": "nyc report --reporter html"
   },
@@ -30,6 +31,7 @@
     "deepmerge": "^2.1.1",
     "emotion": "^9.2.3",
     "react-emotion": "^9.2.3",
+    "react-live": "^1.10.1",
     "styled-components": "^3.3.2"
   },
   "ava": {
@@ -37,5 +39,9 @@
       "babel-register"
     ],
     "babel": "inherit"
+  },
+  "x0": {
+    "title": "Horror",
+    "description": "React HTML elements with CSS-in-JS"
   }
 }

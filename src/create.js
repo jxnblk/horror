@@ -1,5 +1,6 @@
 import React from 'react'
 import tags from 'html-tags'
+import cap from './cap'
 
 const Tag = ({
   is = 'div',
@@ -9,8 +10,6 @@ const Tag = ({
 }) => (
   React.createElement(is, props)
 )
-
-const cap = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const create = styled => {
   const H = styled(Tag)([], ({ css }) => css)

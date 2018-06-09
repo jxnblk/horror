@@ -1,6 +1,7 @@
+const tags = require('html-tags')
 const H = require('./dist/emotion').default
+const cap = require('./dist/cap').default
 module.exports = H
-module.exports.default = H
-Object.keys(H).forEach(key => {
-  module.exports[key] = H[key]
+tags.forEach(key => {
+  module.exports[cap(key)] = H[cap(key)]
 })
