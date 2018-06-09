@@ -7,6 +7,16 @@
 npm i horror styled-components
 ```
 
+## Quick Start
+
+To create a Horror starter project, run:
+
+```sh
+npm init horror my-horror-project
+```
+
+## Usage
+
 ```jsx
 import React from 'react'
 import { Div, H1 } from 'horror'
@@ -120,4 +130,6 @@ import H from 'horror/emotion'
 [emotion]: https://github.com/emotion-js/emotion
 [sc]: https://github.com/styled-components/styled-components/
 
-MIT License
+[MIT License](LICENSE.md)
+|
+[Made by Compositor](https://compositor.io)
