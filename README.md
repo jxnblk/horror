@@ -110,6 +110,13 @@ npm i emotion react-emotion
 import H from 'horror/emotion'
 ```
 
+## Related & Inspiration
+
+- [styled-components][sc]
+- [emotion][emotion]
+- [jsxstyle](https://github.com/smyte/jsxstyle)
+- [glamorous](https://github.com/paypal/glamorous)
+
 [emotion]: https://github.com/emotion-js/emotion
 [sc]: https://github.com/styled-components/styled-components/
 
