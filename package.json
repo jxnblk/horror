@@ -1,0 +1,39 @@
+{
+  "name": "horror",
+  "version": "1.0.0-1",
+  "description": "React HTML elements with CSS-in-JS",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "babel src -d dist",
+    "start": "x0 examples",
+    "test": "nyc ava",
+    "cover": "nyc report --reporter html"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "dependencies": {
+    "ava": "^0.25.0",
+    "html-tags": "^2.0.0",
+    "nyc": "^12.0.2",
+    "react-test-renderer": "^16.4.0"
+  },
+  "devDependencies": {
+    "@compositor/x0": "^5.0.5",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "emotion": "^9.2.3",
+    "react-emotion": "^9.2.3",
+    "styled-components": "^3.3.2"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}

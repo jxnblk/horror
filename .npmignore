@@ -1,0 +1,5 @@
+src
+examples
+test.js*
+coverage
+.nyc_output
