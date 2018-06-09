@@ -41,6 +41,7 @@
     "babel": "inherit"
   },
   "x0": {
+    "basename": "/horror",
     "title": "Horror",
     "description": "React HTML elements with CSS-in-JS"
   }
