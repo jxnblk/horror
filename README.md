@@ -1,7 +1,9 @@
 
-# horror
+# Horror
 
 :scream: React HTML elements with CSS-in-JS
+
+https://jxnblk.com/horror
 
 ```sh
 npm i horror styled-components
