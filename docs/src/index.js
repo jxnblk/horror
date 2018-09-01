@@ -5,6 +5,7 @@ import {
   LiveEditor,
   LiveError
 } from 'react-live'
+import { Head } from 'mdx-go'
 import H, {
   Div,
   H1,
@@ -113,34 +114,42 @@ const Flex = props =>
     }}
   />
 
+export const Root = props => props.children
+
 export default class extends React.Component {
   render () {
     return (
-      <LiveProvider
-        code={code}
-        scope={scope}
-        transformCode={transform}
-        mountStylesheet={false}>
-        <Err />
-        <Flex>
-          <Div
-            css={{
-              [breakpoint]: {
-                width: '65%'
-              }
-            }}
-          >
-            <LivePreview />
-          </Div>
-          <Editor
-            css={{
-              [breakpoint]: {
-                width: '35%'
-              }
-            }}
-          />
-        </Flex>
-      </LiveProvider>
+      <React.Fragment>
+        <Head>
+          <title>Horror</title>
+          <meta name='description' content='React HTML elements with CSS-in-JS' />
+        </Head>
+        <LiveProvider
+          code={code}
+          scope={scope}
+          transformCode={transform}
+          mountStylesheet={false}>
+          <Err />
+          <Flex>
+            <Div
+              css={{
+                [breakpoint]: {
+                  width: '65%'
+                }
+              }}
+            >
+              <LivePreview />
+            </Div>
+            <Editor
+              css={{
+                [breakpoint]: {
+                  width: '35%'
+                }
+              }}
+            />
+          </Flex>
+        </LiveProvider>
+      </React.Fragment>
     )
   }
 }
